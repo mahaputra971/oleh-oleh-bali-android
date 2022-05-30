@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "410003871819",
+    "project_id": "tokolaptop-5220d",
+    "storage_bucket": "tokolaptop-5220d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410003871819:android:96f544c13e44d0609655ce",
+        "android_client_info": {
+          "package_name": "com.kenjiro.tokolaptop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410003871819-34rh84a8h5qgt0qeqd2ckt3vv78lrr2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRUYBuC52YIF5YduRIvBctXY3fs9h6yt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410003871819-34rh84a8h5qgt0qeqd2ckt3vv78lrr2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
