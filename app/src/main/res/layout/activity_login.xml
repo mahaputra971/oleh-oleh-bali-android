@@ -17,7 +17,10 @@
             android:id="@+id/loginHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
             <TextView
@@ -64,7 +67,7 @@
                 android:fontFamily="@font/aclonica"
                 android:text="@string/login"
                 android:textAlignment="center"
-                android:textColor="#A1887F"
+                android:textColor="#437FC8"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -148,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/lupa_password"
-                    android:textColor="#8D6E63"
+                    android:textColor="#437FC8"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -165,7 +168,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="@string/belum_punya_akun"
+                    android:text="@string/belum_meiliki_akun"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -175,13 +178,39 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="@string/daftar_di_sini"
-                    android:textColor="#8D6E63"
+                    android:text="@string/daftar_sekarang_di_sini"
+                    android:textColor="#437FC8"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/atau_daftar_lewat"
+                    android:textColor="#437FC8"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/googleApiLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/googleapi"
+                    android:src="@drawable/google_logo" />
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

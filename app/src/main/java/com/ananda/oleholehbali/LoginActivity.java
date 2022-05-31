@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            // Cek kesesuaian username dan password
+            // Cek ketepatan username dan password
             if (Objects.requireNonNull(Lusername.getText()).toString().equals(finalRusername) && Objects.requireNonNull(Lpassword.getText()).toString().equals(finalRpassword)){
                 Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                 intent.putExtra("Username", Objects.requireNonNull(Lusername.getText()).toString());

@@ -50,16 +50,5 @@ public class DashboardActivity extends AppCompatActivity {
             startActivity(intents);
         });
 
-        detailProduct = findViewById(R.id.layoutBest1);
-        detailProduct.setOnClickListener(view -> {
-            Intent intents = new Intent(DashboardActivity.this, DetailProductActivity.class);
-            startActivity(intents);
-        });
-
-        listProduct = findViewById(R.id.layoutAsus);
-        listProduct.setOnClickListener(view -> {
-            Intent intents = new Intent(DashboardActivity.this, ListProdukActivity.class);
-            startActivity(intents);
-        });
     }
 }

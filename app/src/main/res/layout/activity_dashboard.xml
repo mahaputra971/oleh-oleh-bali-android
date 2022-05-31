@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#95CFEC"
     tools:context=".DashboardActivity"
     android:orientation="vertical">
 
@@ -31,12 +31,34 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                    android:id="@+id/searchLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/search_icon_bg"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/welcomeLayout">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/search_icon_bg"
+                        android:contentDescription="@string/app_name"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/welcomeLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    app:layout_constraintBottom_toTopOf="@id/searchLayout">
+                    app:layout_constraintTop_toBottomOf="@id/searchLayout">
 
                     <TextView
                         android:id="@+id/textHello"
@@ -52,12 +74,12 @@
 
                     <TextView
                         android:id="@+id/textUsername"
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/bebas_neue"
-                        android:text="@string/kenjiro"
+                        android:text="@string/Ananda"
                         android:textColor="@color/custom_text"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -82,42 +104,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/searchLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="10dp"
-                    android:background="@drawable/search_icon_bg"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/welcomeLayout">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:background="@null"
-                        android:hint="@string/search_here"
-                        android:imeOptions="actionSearch"
-                        android:importantForAutofill="no"
-                        android:inputType="text"
-                        android:paddingHorizontal="15dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/search_icon_bg"
-                        android:contentDescription="@string/app_name"
-                        android:padding="6dp"
-                        android:src="@drawable/ic_search"
-                        app:tint="@color/black" />
-
-                </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -133,36 +119,6 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/allura"
-                        android:gravity="end"
-                        android:text="@string/it_s"
-                        android:textColor="@color/black"
-                        android:textSize="30sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/bebas_neue"
-                        android:gravity="end"
-                        android:text="@string/work_time"
-                        android:textColor="@color/custom_button"
-                        android:textSize="35sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:padding="5dp">
@@ -172,7 +128,7 @@
                         android:layout_height="150dp"
                         android:background="@drawable/bg_white_circle"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/laptopads" />
+                        android:src="@drawable/logo" />
 
                 </LinearLayout>
 
@@ -202,7 +158,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/bebas_neue"
                         android:gravity="start"
-                        android:text="@string/brands_sign"
+                        android:text="@string/daftar_produk"
                         android:textColor="@color/black"
                         android:textSize="25sp" />
 
@@ -230,7 +186,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:id="@+id/layoutAsus"
+                            android:id="@+id/layoutfirst"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -247,13 +203,12 @@
                                 android:layout_height="80dp"
                                 android:layout_margin="8dp"
                                 android:contentDescription="@string/app_name"
-                                android:padding="8dp"
-                                android:src="@drawable/asus" />
+                                android:src="@drawable/bawang_putih_goreng" />
 
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/layoutAcer"
+                            android:id="@+id/layoutsecond"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -270,9 +225,7 @@
                                 android:layout_height="80dp"
                                 android:layout_margin="8dp"
                                 android:contentDescription="@string/app_name"
-                                android:padding="8dp"
-                                android:src="@drawable/acer" />
-
+                                android:src="@drawable/bawang_merah_goreng" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -285,9 +238,9 @@
                             android:orientation="vertical"
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
-                            app:layout_constraintEnd_toStartOf="@id/layoutAcer"
+                            app:layout_constraintEnd_toStartOf="@id/layoutsecond"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/layoutAsus"
+                            app:layout_constraintTop_toBottomOf="@id/layoutfirst"
                             tools:ignore="UseCompoundDrawables">
 
                             <ImageView
@@ -295,8 +248,7 @@
                                 android:layout_height="80dp"
                                 android:layout_margin="8dp"
                                 android:contentDescription="@string/app_name"
-                                android:padding="8dp"
-                                android:src="@drawable/apple" />
+                                android:src="@drawable/bedetan" />
 
                         </LinearLayout>
 
@@ -311,8 +263,8 @@
                             android:padding="5dp"
                             app:layout_constraintDimensionRatio="H,1:1"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/layoutAsus"
-                            app:layout_constraintTop_toBottomOf="@id/layoutAcer"
+                            app:layout_constraintStart_toEndOf="@id/layoutfirst"
+                            app:layout_constraintTop_toBottomOf="@id/layoutsecond"
                             tools:ignore="UseCompoundDrawables">
 
                             <ImageView
@@ -321,7 +273,7 @@
                                 android:layout_margin="8dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/hp" />
+                                android:src="@drawable/bedetan_cripsy_tk" />
 
                         </LinearLayout>
 
@@ -385,14 +337,14 @@
                                 android:layout_margin="5dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/asus_f412d" />
+                                android:src="@drawable/bedetan_crispy" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bebas_neue"
                                 android:gravity="center"
-                                android:text="Asus F412D"
+                                android:text="Bedetan Cripsi TK"
                                 android:textColor="@color/black"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -424,7 +376,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:text="Rp 5.000.000"
+                                android:text="Rp 15.000"
                                 android:textColor="@color/custom_text"
                                 android:textSize="15sp" />
 
@@ -448,15 +400,14 @@
                                 android:layout_height="100dp"
                                 android:layout_margin="5dp"
                                 android:contentDescription="@string/app_name"
-                                android:padding="8dp"
-                                android:src="@drawable/acer_aspire_a515" />
+                                android:src="@drawable/krupuk_kulit_ikan" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bebas_neue"
                                 android:gravity="center"
-                                android:text="Aspire A515"
+                                android:text="Kerupuk Kulit Ikan"
                                 android:textColor="@color/black"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -489,7 +440,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:text="Rp 10.750.000"
+                                android:text="Rp 15.0000"
                                 android:textColor="@color/custom_text"
                                 android:textSize="15sp" />
 
@@ -514,14 +465,14 @@
                                 android:layout_margin="5dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/macbook_air_2017" />
+                                android:src="@drawable/serundeng_kelapa" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bebas_neue"
                                 android:gravity="center"
-                                android:text="Mac Air 2017"
+                                android:text="Serundeng Kelapa"
                                 android:textColor="@color/black"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -553,7 +504,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:text="Rp 11.999.000"
+                                android:text="Rp 15.000"
                                 android:textColor="@color/custom_text"
                                 android:textSize="15sp" />
 
@@ -578,14 +529,14 @@
                                 android:layout_margin="5dp"
                                 android:contentDescription="@string/app_name"
                                 android:padding="8dp"
-                                android:src="@drawable/hp_pavilion_15" />
+                                android:src="@drawable/kacang_serondeng" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/bebas_neue"
                                 android:gravity="center"
-                                android:text="hp Pavilion 15"
+                                android:text="Kacang Serondeng"
                                 android:textColor="@color/black"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -617,7 +568,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:text="Rp 8.399.000"
+                                android:text="Rp 15.000"
                                 android:textColor="@color/custom_text"
                                 android:textSize="15sp" />
 

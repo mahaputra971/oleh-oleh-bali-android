@@ -16,9 +16,6 @@
             android:name="com.ananda.oleholehbali.KeranjangActivity"
             android:exported="false" />
         <activity
-            android:name="com.ananda.oleholehbali.ListProdukActivity"
-            android:exported="false" />
-        <activity
             android:name="com.ananda.oleholehbali.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,9 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.ananda.oleholehbali.DetailProductActivity"
-            android:exported="false" />
         <activity
             android:name="com.ananda.oleholehbali.DashboardActivity"
             android:exported="false" />

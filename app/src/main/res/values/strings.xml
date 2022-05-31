@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Toko Laptop</string>
+    <string name="app_name">Oleh-Oleh Bali</string>
     <string name="login">LOGIN</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
-    <string name="belum_punya_akun">Belum punya Akun?</string>
-    <string name="daftar_di_sini">Daftar di Sini</string>
+    <string name="belum_meiliki_akun">Belum Memiliki Akun?</string>
+    <string name="daftar_sekarang_di_sini">Daftar Sekarang di Sini</string>
     <!-- Strings used for fragments for navigation -->
 
     <string name="register">REGISTER</string>
@@ -14,12 +14,12 @@
     <string name="sign_up">Sign Up</string>
     <string name="masuk_di_sini">Masuk di Sini</string>
     <string name="sudah_punya_akun">Sudah punya Akun?</string>
-    <string name="kenjiro">Kenjiro</string>
+    <string name="Ananda">Ananda</string>
     <string name="search_here">Search here</string>
     <string name="home">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="lupa_password">Lupa Password?</string>
-    <string name="brands_sign">BRANDS</string>
+    <string name="daftar_produk">DAFTAR PRODUK</string>
     <string name="best_seller_sign">BEST SELLER</string>
     <string name="add_to_cart">ADD TO CART</string>
     <string name="product_name">Product Name</string>
@@ -30,7 +30,7 @@
     <string name="lorem30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula dapibus, ultrices tortor eu, condimentum nulla. Maecenas ac dolor tortor. Vivamus sagittis lectus non molestie facilisis. Pellentesque habitant morbi.</string>
     <string name="categories">Categories</string>
     <string name="view_all">View all</string>
-    <string name="dashboard_welcome">Good Day,</string>
+    <string name="dashboard_welcome">Selamat Datang,</string>
     <string name="back_button">Back Button</string>
     <string name="detail_produk">Detail Produk</string>
     <string name="list_produk">List Produk</string>
@@ -43,7 +43,7 @@
     <string name="it_s">It\'s</string>
     <string name="log_out">Log Out</string>
     <string name="user_picture">User Picture</string>
-    <string name="kenjiro_lehot">Kenjiro Lehot</string>
+    <string name="ananda_mahaputra">Ananda Mahaputra</string>
     <string name="splash_image">Splash Image</string>
     <string name="keranjang">Keranjang</string>
     <string name="icon_delete">Icon Delete</string>
@@ -72,4 +72,7 @@
     <string name="ket_spek_3">SSD 256GB</string>
     <string name="spek_4">OS</string>
     <string name="ket_spek_4">Windows 10</string>
+    <string name="atau_daftar_lewat">Atau Daftar Lewat</string>
+    <string name="googleapi">googleAPI</string>
+
 </resources>
