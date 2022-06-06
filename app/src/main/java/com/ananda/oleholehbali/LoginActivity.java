@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         Lusername.setText(getIntent().getStringExtra("Username"));
         Lpassword.setText(getIntent().getStringExtra("Password"));
 
-        String Rusername = "Kenji";
-        String Rpassword = "passkenji";
+        String Rusername = "Nanda";
+        String Rpassword = "nanda123";
 
         if (getIntent().hasExtra("Username") && getIntent().hasExtra("Password")) {
             Rusername = getIntent().getStringExtra("Username");
