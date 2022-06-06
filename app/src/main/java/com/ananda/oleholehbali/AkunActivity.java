@@ -48,8 +48,10 @@ public class AkunActivity extends AppCompatActivity {
         btnLogout.setOnClickListener(view -> {
             Intent intents = new Intent(AkunActivity.this, LoginActivity.class);
             startActivity(intents);
-            Toast.makeText(AkunActivity.this, "Berhasil Logout", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AkunActivity.this, "Berhasil Logout, Silahkan Datang Kembali !", Toast.LENGTH_SHORT).show();
             finish();
         });
+
+        
     }
 }
